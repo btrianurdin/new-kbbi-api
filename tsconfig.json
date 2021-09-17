@@ -1,0 +1,19 @@
+{
+    "typeRoots": [
+        "./src/types", // this is where you define your types
+        "./node_modules/@types" //this where npm packages containing types are located
+    ],
+    "compilerOptions": {
+        "sourceMap": true,
+        "target": "es2021",
+        "module": "commonjs",
+        "outDir": "./dist",
+        "baseUrl": "./src"
+    },
+    "include": [
+        "./src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+}

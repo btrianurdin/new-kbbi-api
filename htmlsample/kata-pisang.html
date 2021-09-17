@@ -1,0 +1,66 @@
+<div class="container body-content">
+    
+
+
+
+
+<br>
+
+<div>
+    <h4 class="text-center">
+      <span class="glyphicon glyphicon-info-sign text-primary"></span>
+      Informasi: Temukan bantuan menggunakan KBBI Daring <a href="/Beranda/Bantuan">di sini</a>.
+    </h4>
+    <br>
+</div>
+
+<form action="/entri/nul" class="form-horizontal" id="searchForm" method="post" onsubmit="searchText(event)" role="form"><div class="form-group">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div class="input-group form-control-max">
+      <input id="textBoxSearch" name="frasa" value="pisang" type="text" class="form-control form-control-max" style="margin-top:1px;" placeholder="Pencarian...">
+      <span class="input-group-btn">
+        <span class="btn btn-primary glyphicon glyphicon-search" onclick="searchText(event)"></span>
+      </span>
+    </div>
+  </div>
+</div>
+<h3 id="errorMessageDiv"></h3>
+<script>
+  String.prototype.contains = function (it) { return this.indexOf(it) != -1; };
+  function searchText(ev) {
+    var val = $("#textBoxSearch").val();
+    ev.preventDefault();
+    if (!val) {
+      $("#errorMessageDiv").replaceWith("<h3 id=\"errorMessageDiv\"><font color=\"red\"><p class=\"text-center add-margin-top-5\"><i>Kotak pencarian tidak boleh kosong</i></p></font></h3>");
+    } else {
+      if (val.contains('.') || val.contains('?') || val.toLowerCase() == 'nul' || val.toLowerCase() == 'bin') { //for non-dependent respond
+        window.location.href = '/' + 'Cari/Hasil?frasa=' + val;
+      } else {
+        window.location.href = '/' + 'entri/' + val;
+      }
+    }
+  }
+</script>
+</form>
+
+  <hr>
+<h2 style="margin-bottom:3px">Pi.sang </h2><p><a href="http://tesaurus.kemdikbud.go.id/tematis/lema/pisang">⇢ Tesaurus</a></p><ul style="list-style: none;" class="adjusted-par"><li><font color="red"><i><span title="Nomina: kata benda">n</span>        </i></font>suku di Provinsi Sumatra Barat</li></ul><h2 style="margin-bottom:3px">pi.sang<sup>1</sup> </h2><p><a href="http://tesaurus.kemdikbud.go.id/tematis/lema/pisang">⇢ Tesaurus</a></p><ul style="list-style: none;" class="adjusted-par"><li><font color="red"><i><span title="Nomina: kata benda">n</span>        </i></font>tanaman jenis <i>Musa</i>, buahnya berdaging dan dapat dimakan, ada bermacam-macam, seperti <i>-- ambon, -- barangan, -- raja, -- raja serai, -- uli</i></li></ul><h2 style="margin-bottom:3px">pi.sang<sup>2</sup> </h2><p><a href="http://tesaurus.kemdikbud.go.id/tematis/lema/pisang">⇢ Tesaurus</a></p><font color="darkgreen" title="prakategorial: kata tidak dipakai dalam bentuk dasarnya"><i>prakategorial</i></font> cari: <font color="grey">pisang-pisang</font><h2 style="margin-bottom:3px">pi.sang<sup>3</sup> </h2><p><a href="http://tesaurus.kemdikbud.go.id/tematis/lema/pisang">⇢ Tesaurus</a></p><font color="darkgreen" title="prakategorial: kata tidak dipakai dalam bentuk dasarnya"><i>prakategorial</i></font> cari: <font color="grey">pisang-pisang</font>    <hr>
+    <h4><span class="glyphicon glyphicon-info-sign text-info"></span> Pesan Redaksi</h4>
+    <p>Anda baru saja melakukan pencarian tanpa memakai <a href="/Account/Login">akun yang terdaftar dalam laman KBBI Daring</a>.</p>
+    <p>Jika Anda belum memiliki akun yang terdaftar, silakan <a href="/Account/Register">mendaftar melalui tautan ini</a>.</p>
+    <p>Mendaftar dalam laman KBBI Daring akan</p>
+    <ul>
+      <li>memudahkan pencarian Anda melalui berbagai fitur yang hanya tersedia bagi pengguna terdaftar</li>
+      <li>memberikan Anda hak berpartisipasi dalam pengayaan kosakata bahasa Indonesia dengan memberikan usulan kata/makna baru atau perbaikan pada KBBI</li>
+      <li>menampilkan hasil pencarian dengan tambahan informasi yang lebih lengkap (misalnya, informasi etimologi)</li>
+    </ul>
+
+    <hr>
+    <footer>
+  <p>© 2016 <a href="http://badanbahasa.kemdikbud.go.id/">Badan Pengembangan dan Pembinaan Bahasa</a>, Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi Republik Indonesia</p>
+  <p>Versi luring: <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=yuku.kbbi5&amp;hl=in">Android</a> | <a class="btn btn-primary" href="https://itunes.apple.com/app/kamus-besar-bahasa-indonesia/id1173573777">iOS</a>
+  || <span title="by: Ian K">Versi daring: 3.7.0.1-20210911212637</span></p>
+</footer>
+
+  </div>
