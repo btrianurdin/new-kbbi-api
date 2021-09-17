@@ -18,7 +18,6 @@ export const SearchWord = async (word: string) => {
     });
 
     for (let i = 0; i < $(".body-content > h2").length; i++) {
-
       let lema = $(".body-content > h2").eq(i).text().trim();
       let kelas_kata = "";
       let deskripsi = "";
