@@ -5,11 +5,20 @@ Api ini dilengkapi dengan **Lema**, **Kelas Kata**, dan **Deskripsi (arti)**.
 
 
 ### Dokumentasi
-**Base Url** : `https://new-kbbi-api.herokuapp.com`
-**Endpoint** : `/cari/[kosa kata]`
+**Base Url** : 
+```
+https://new-kbbi-api.herokuapp.com
+``` 
+**Endpoint** : 
+```
+/cari/[kosa kata]
+```
 
+#### Pengunaan
 - Contoh *Request*
-  ```GET https://new-kbbi-api.herokuapp.com/cari/demokrasi```
+  ```
+    [GET] https://new-kbbi-api.herokuapp.com/cari/demokrasi
+  ```
 - Contoh *Response*
   ```json
   {
