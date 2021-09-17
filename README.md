@@ -17,7 +17,7 @@ https://new-kbbi-api.herokuapp.com
 #### Pengunaan
 - Contoh *Request*
   ```
-    [GET] https://new-kbbi-api.herokuapp.com/cari/demokrasi
+    GET https://new-kbbi-api.herokuapp.com/cari/demokrasi
   ```
 - Contoh *Response*
   ```json
