@@ -4,7 +4,7 @@ Rest API untuk Kamus Besar Bahasa Indonesia (KBBI) yang bangun dengan NodeJS, Ch
 Api ini dilengkapi dengan **Lema**, **Kelas Kata**, dan **Deskripsi (arti)**.
 
 
-### Dokumentasi
+## Dokumentasi
 **Base Url** : 
 ```
 https://new-kbbi-api.herokuapp.com
@@ -14,7 +14,7 @@ https://new-kbbi-api.herokuapp.com
 /cari/[kosa kata]
 ```
 
-#### Pengunaan
+### Pengunaan
 - Contoh *Request*
   ```
     GET https://new-kbbi-api.herokuapp.com/cari/demokrasi
