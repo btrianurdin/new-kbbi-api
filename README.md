@@ -1,8 +1,10 @@
 # New KBBI API (Scraper)
+
 Rest API untuk Kamus Besar Bahasa Indonesia (KBBI) yang bangun dengan NodeJS, Cheerio dan Typescript. 
 
 Api ini dilengkapi dengan **Lema**, **Kelas Kata**, dan **Deskripsi (arti)**.
 
+Showcase project : https://github.com/btrianurdin/kbbi-showcase
 
 ## Dokumentasi
 **Base Url** : 
